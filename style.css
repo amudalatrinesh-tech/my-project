@@ -6,7 +6,9 @@
 body {
     background-color: black;
     color: white;
-    padding: 30px;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100vw;
     height: 100vw;
@@ -15,10 +17,13 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-form {
+form, .form-container {
     border: 2px solid white;
     border-radius: 5px;
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding: 50px 30px;
     display: flex;
     flex-direction: column;
@@ -58,7 +63,7 @@ form input {
     text-align: center;
     margin-top: 8px;
 }
-button {
+input, button {
     width: 100%;
     padding: 13px;
     margin-top: 20px;
@@ -67,6 +72,7 @@ button {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 button:hover {
     background-color:  #111;
